@@ -2,6 +2,7 @@
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com/" />
   <remote  name="xt" fetch="https://github.com/xen-troops/" />
+  <remote  name="iusyk" fetch="https://github.com/iusyk/" />
   <remote  name="epam" fetch="ssh://git@gitpct.epam.com/epmd-aepr/" />
   <remote  name="rec-inv" fetch="ssh://git@gitpct.epam.com/rec-inv/" />
   <default revision="master-kernel-build-2022" remote="aosp" sync-j="4" />
@@ -23,7 +24,7 @@
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
   <project path="hikey-modules" name="kernel/hikey-modules" revision="android13-5.10" />
-  <project path="common" name="linux" remote="xt" revision="common-android13-5.10-xt-cr7" >
+  <project path="common" name="linux" remote="iusyk" revision="common-android13-5.10-xt-cr7" >
     <linkfile src="." dest=".source_date_epoch_dir" />
   </project>
   <project path="kernel/tests" name="kernel/tests" />
